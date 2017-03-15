@@ -9,6 +9,7 @@ from diagnostic_msgs.msg import *
 from nav_msgs.msg import *
 
 #publisher testing
+
 def callback(data):
     print (data)
     print('--------------------------------------')
