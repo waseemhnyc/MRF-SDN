@@ -8,7 +8,7 @@ from geometry_msgs.msg import *
 from diagnostic_msgs.msg import *
 from nav_msgs.msg import *
 
-
+#publishers
 def callback(data):
     print (data)
     print('--------------------------------------')
