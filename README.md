@@ -23,11 +23,11 @@
 
 			- [ ] Image Stitching for Maps
 
-			- [ ] Color Detection (ComputerVision/Tracking)
+			- [ ] Color Detection
 
-			- [ ] Face Detection (ComputerVision/Tracking)
+			- [ ] Face Detection
 
-			- [ ] Apriltag Detection (ComputerVision/Tracking)
+			- [ ] Apriltag Detection
 
 			- [ ] Image - Cell Decomposition 
 
