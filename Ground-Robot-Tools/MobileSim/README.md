@@ -1,4 +1,4 @@
-## Installing and Running [MobileSim](http://robots.mobilerobots.com/wiki/MobileSim)
+## Installing and using [MobileSim](http://robots.mobilerobots.com/wiki/MobileSim)
 
 ### Installing MobileSim
 
@@ -23,7 +23,7 @@
 
 You can igonore them for now.
 
-### Running MobileSim
+### Using MobileSim
 
 1. In a terminal do the following commands:
 
@@ -38,4 +38,4 @@ You can igonore them for now.
 		Ready for a client to connect on TCP port 8101
 
 
-Congratulations! You have just downloaded and ran MobileSim.
+Congratulations! You have just downloaded and can now use MobileSim.
