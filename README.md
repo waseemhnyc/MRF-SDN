@@ -27,7 +27,7 @@
 
 			- [ ] Face Detection (ComputerVision/Tracking)
 
-			- [ ] April-Tag Detection (ComputerVision/Tracking)
+			- [ ] Apriltag Detection (ComputerVision/Tracking)
 
 			- [ ] Image - Cell Decomposition 
 
