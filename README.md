@@ -26,6 +26,8 @@ From that point forward you can begin to test and use the different software pac
 
 - [ ] Linux Installation
 
+- [ ] OpenCV Installation and Examples
+
 - [ ] Robotics Tools
 
 			- [X] Communication

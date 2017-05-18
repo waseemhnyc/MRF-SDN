@@ -1,5 +1,7 @@
 ## Computer Vision
 
+Refer to OpenCV Installation and Examples to download opencv before running any of these examples.
+
 ### Apriltag Detections
 
 ROS Package that detects April Tags.
