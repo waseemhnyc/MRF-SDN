@@ -55,3 +55,12 @@ From that point forward you can begin to test and use the different software pac
 
 - [X] Secure-Shell(SSH)
 
+
+## Project Contributers
+
+Waseem Hussain - Mechatronics Engineering - Vaughn College of Aeronautics and Technology - w927hussain@gmail.com
+
+Andrew Aquino - Mechatronics Engineering - Vaughn College of Aeronautics and Technology - aquinoandrew50@gmail.com
+
+Dr. Flavio Cabrera - Electrical Engineering - Professor at Vaughn College of Aeronautics and Technology - flavio.cabrera@vaughn.edu
+
