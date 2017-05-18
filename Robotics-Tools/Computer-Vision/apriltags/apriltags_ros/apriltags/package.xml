@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package>
+  <name>apriltags</name>
+  <version>0.0.4</version>
+  <description>A catkin version of the C++ apriltags library, adapted for using eigen3 in ROS jade. It is based on the original work of Mitchell Wills located at: </description>
+   <url>https://github.com/RIVeR-Lab/apriltags_ros</url>
+
+  <maintainer email="flavio.cabrera.m.jm@gmail.com">Flavio Cabrera</maintainer>
+  <author>Flavio Cabrera</author>
+
+  <url type="website"></url>
+  <url type="bugtracker"></url>
+  <url type="repository"></url>
+  <license>LGPL</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>eigen3</build_depend>
+  <build_depend>opencv2</build_depend>
+  <build_depend>libv4l-dev</build_depend>
+  <run_depend>eigen3</run_depend>
+  <run_depend>opencv2</run_depend>
+  <run_depend>libv4l-dev</run_depend>
+</package>

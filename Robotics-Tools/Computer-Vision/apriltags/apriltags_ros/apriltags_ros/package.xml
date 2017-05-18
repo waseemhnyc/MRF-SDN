@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<package>
+  <name>apriltags_ros</name>
+  <version>0.0.4</version>
+  <description>A package that provides a ROS wrapper for the apriltags C++ package. It is based on the original work of Mitchell Wills (located at the url below). This version has been modified so that it can be implemented in ROS jade and it has been trim down so to consider only input from cameras or video </description>
+   <url>https://github.com/RIVeR-Lab/apriltags_ros</url>
+
+  <maintainer email="flavio.cabrera.m.jm@gmail.com">Flavio Cabrera</maintainer>
+  <author>Flavio Cabrera</author>
+
+  <license>BSD</license>
+
+  <url type="website"></url>
+  <url type="bugtracker"></url>
+  <url type="repository"></url>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>apriltags</build_depend>
+  <build_depend>image_transport</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>nodelet</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <run_depend>apriltags</run_depend>
+  <run_depend>image_transport</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>cv_bridge</run_depend>
+  <run_depend>message_runtime</run_depend>
+  <run_depend>nodelet</run_depend>
+  <run_depend>std_msgs</run_depend>
+
+  <export>
+    <nodelet plugin="${prefix}/nodelet_plugins.xml" />
+  </export>
+</package>
