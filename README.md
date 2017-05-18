@@ -12,41 +12,41 @@ From that point forward you can begin to test and use the different software pac
 
 - [ ] Aerial Robot Tools
 
-			- [X] DroneKit API
+			[X] DroneKit API
 
-			- [ ] ROS
+			[ ] ROS
 
 - [ ] Ground Robot Tools
 
-			- [X] Rosaria
+			[X] Rosaria
 
-			- [X] Raspberry Pi / GoPiGo Board
+			[X] Raspberry Pi / GoPiGo Board
 
-			- [X] MobileSim
+			[X] MobileSim
 
 - [ ] Linux Installation
 
-- [ ] OpenCV Installation and Examples
+- [X] OpenCV Installation and Examples
 
 - [ ] Robotics Tools
 
-			- [X] Communication
+			[X] Communication
 
-			- [ ] Computer Vision
+			[ ] Computer Vision
 
-					- [X] Apriltag Detection
+					[X] Apriltag Detection
 
-					- [ ] Face Detection
+					[ ] Face Detection
 
-					- [ ] Image Stitching for Maps
+					[ ] Image Stitching for Maps
 
-					- [ ] Square and Circle Detection
+					[ ] Square and Circle Detection
 
-			- [X] Joystick
+			[X] Joystick
 
-			- [X] Python Servo
+			[X] Python Servo
 
-			- [X] RPLIDAR
+			[X] RPLIDAR
 
 
 - [X] ROS Introduction and Examples
