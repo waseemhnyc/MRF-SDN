@@ -4,6 +4,9 @@ The RPLIDAR 360° Laser Scanner is a low cost 360 degree 2D scanner (LIDAR) solu
 
 The lidar emits pulses of infared laser signal. The laser signal is reflected by the obejct to be detected. The signal returning then processed by the lidar which outputs for the user or robot distant and angle values.
 
+[![RPLIDAR-ROS](https://img.youtube.com/vi/watch?v=uWEfZFnWWxE&feature=youtu.be/0.jpg)](https://www.youtube.com/watch?v=uWEfZFnWWxE&feature=youtu.be)
+
+
 Download the following package into a caktin workspace and build the project.
 
 To test lidar first plug the device into the computer running ros. Run the following commands to give the right permission to the device:

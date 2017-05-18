@@ -10,25 +10,25 @@ From that point forward you can begin to test and use the different software pac
 
 #### Directory
 
-- Aerial Robot Tools
+- [ ] Aerial Robot Tools
 
 		- [ ] DroneKit API
 
 		- [ ] ROS
 
-- Ground Robot Tools
+- [ ] Ground Robot Tools
 
-		- [ ] Rosaria
+		- [X] Rosaria
 
-		- [ ] Raspberry Pi / GoPiGo Board
+		- [X] Raspberry Pi / GoPiGo Board
 
-		- [ ] MobileSim
+		- [X] MobileSim
 
-- Linux Installation
+- [ ] Linux Installation
 
-- Robotics Tools
+- [ ] Robotics Tools
 
-		- [ ] Communication
+		- [X] Communication
 
 		- [ ] Computer Vision
 
@@ -40,15 +40,16 @@ From that point forward you can begin to test and use the different software pac
 
 			- [ ] Apriltag Detection
 
+		- [ ] Joystick
+
+		- [X] Python_Servo
+
 		- [ ] RPLIDAR
 
-		- [ ] Python_Servo
 
-		- [ ] RPLIDAR
+- [ ] ROS
 
-- ROS
+- [ ] ROS Installation
 
-- ROS Installation
-
-- Secure-Shell(SSH)
+- [X] Secure-Shell(SSH)
 

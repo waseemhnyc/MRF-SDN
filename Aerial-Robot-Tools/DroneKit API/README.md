@@ -12,6 +12,10 @@ You are able to download the DroneKit API  with the following terminal commands:
 	$ pip install dronekit
 	$ pip install dronekit-sitl
 
+You now have the dronekit api installed.
+
+### Examples
+
 In the examples we include a class name yourDrone.py which allows user to connect their drone via usb and have the ability to use functions to recieve and send data to the drone.
 
 We also have the use of the class and how it can be used in the file mavdronekit.py
