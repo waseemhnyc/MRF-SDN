@@ -5,10 +5,10 @@ This project is dedicated to consolidating software packages, tools and examples
 
 In order to use most of the tools, found in this Software Development Kit (SDK), your robot or your development computer (Desktop/Laptop, Raspberry Pi, Odroid, Nvidia TK1) is required to have a Linux operating system with a ROS installation. We recommend to first refer to the Linux - Installation directory for tutorials on installing a Linux distribution depending on your hardware device. Then move to the ROS-Installation directory to install ROS on your device. 
 
-From that point forward you can begin to test and use the different software packages. Refer to the appropriate directory that will best help your requirements or goal.
+From that point forward you can begin to test and use the different software packages. Refer to the appropriate directory that best fit your requirements or goal.
 
 
-#### Directory
+#### Guide and Directories
 
 - [ ] Aerial Robot Tools
 
@@ -42,7 +42,7 @@ From that point forward you can begin to test and use the different software pac
 
 			- [X] Joystick
 
-			- [X] Python_Servo
+			- [X] Python Servo
 
 			- [X] RPLIDAR
 
