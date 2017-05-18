@@ -1,8 +1,17 @@
 ## ROS - Robot Operating System
 
-### How ROS works
+Robot Operating System (ROS) has become a standard in the robotics community. These drivers, algorithms, tools, libraries and conventions are aimed towards simplifying and creating complex robotic behavior across a wide range of platforms and applications. ROS is open source, where users have access to change and update projects.
 
+### How ROS works
+T
+he basic ROS architecture is made up of packages with nodes (publishers, subscribers), topics, services, and messages. To send data, we must “publish” the data to a specific topic. When you would like to read or input data you must “subscribe” to a topic. Topics are used to exchange messages across different systems. A service is like a topic that a system exchanges messages but when a system uses a service to send a message that system waits for a reply before completing a new action.
+
+![alt text](http://wiki.ros.org/custom/images/wiki/ROS_basic_concepts.png "Logo Title Text 1")
+
+#### Definitions
 Nodes: A node is an executable that uses ROS to communicate with other nodes.
+
+Launch Files: files that allow you to open more then one node from one file with pre defined parameters for your ros environment.
 
 Messages: ROS data type used when subscribing or publishing to a topic.
 
@@ -20,7 +29,7 @@ Manifests (package.xml): A manifest is a description of a package. It serves to 
 
 ### Using ROS
 
-#### Creating a ROS Workspace
+#### Creating a ROS Catkin Workspace
 
 Create a ROS workspace name catkin_ws with a folder name src with the following command:
 
@@ -88,6 +97,11 @@ After the workspace has been bult it will have created a smiliar strucuture in t
 Add the workspace to your ROS environment you need to source the generated setup file:
 
 		$ . ~/catkin_ws/devel/setup.bash
+
+After source workspace then you are able to run a ros package. To do this type the following command in the terminal screed:
+
+		$ rosrun {nameofpackage} {nameoffile}
+		$ rosrun turtlesim turtlesim_node
 
 #### Additional ROS Information
 
@@ -183,11 +197,11 @@ In the third run the following command:
 In the last terminal screen move into the directory of where you have your workspace with the scripts built.
 When using this example create your catkin workspace, create a catkin package in this workspace with a directory as scripts. In this directory download and place the two examples, listener.py and talker.py.
 
-**When using Python you must make an executable of your files. To do this go to the directory of where your files are located and ls. They should show up as a white or "normal" color. To make an exectubale use the following terminal command (for all the files):
+When using Python you must make an executable of your files. To do this go to the directory of where your files are located and ls. They should show up as a white or "normal" color. To make an exectubale use the following terminal command (for all the files):
 
 		$ chmod +x {file_name}
 
-Now when you ls, they will have turned another color denoting it is now an executable file.**
+Now when you ls, they will have turned another color denoting it is now an executable file.
 
 Now move back to the main directory of your workspace and build the project.
 

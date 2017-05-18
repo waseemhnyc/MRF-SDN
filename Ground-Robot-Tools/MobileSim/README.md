@@ -38,4 +38,4 @@ You can igonore them for now.
 		Ready for a client to connect on TCP port 8101
 
 
-Congratulations! You have just downloaded and can now use MobileSim.
+You have just downloaded and can now use MobileSim.
