@@ -54,5 +54,5 @@ Then you will run the following command but with the ip address of the connected
 Now instead of publshing commands to the mobilesim robot, you are able to publish commands on a actual robot.
 
 
-For more info contact: Dr Flavio Cabrer
+For more info contact: Dr Flavio Cabrera
 

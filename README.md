@@ -27,6 +27,7 @@ From that point forward you can begin to test and use the different software pac
 - Linux Installation
 
 - Robotics Tools
+
 		- [ ] Communication
 
 		- [ ] Computer Vision
