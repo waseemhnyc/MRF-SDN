@@ -11,8 +11,9 @@ From this point forward you can begin to test and use the different software pac
 #### Directory
 
 - Aerial Robot Tools
-
-		- [ ] Mavlink Protocol
+		
+		- [ ] DroneKit API
+		- [ ] ROS
 
 - Ground Robot Tools
 

@@ -2,10 +2,10 @@
 
 The Linux installation will depend on the hardware you are installing it on. The hardware device will also limit you on the distrubution of linux you are using. For example the Odroid will be running Linux - Ubuntu Mate while the Nvidia will be running Linux - Ubuntu TLS. Nevertheless you are able to install ROS on both linux distributions.
 
-		Desktops/Laptops - Ubuntu TLS
+		Desktops/Laptops - Ubuntu 16.04 TLS
 		Raspberry Pi - Ubuntu Mate
 		Odroid - Ubuntu Mate
-		Nvidia TK1 - Ubuntu TLS
+		Nvidia TK1 - Ubuntu 16.04 TLS
 
 ### Linux Commands
 
