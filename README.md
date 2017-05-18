@@ -10,7 +10,7 @@ From that point forward you can begin to test and use the different software pac
 
 #### Guide and Directories
 
-- [ ] Aerial Robot Tools
+- [ ] Aerial Robot Tools 
 
 			[X] DroneKit API
 
@@ -24,11 +24,11 @@ From that point forward you can begin to test and use the different software pac
 
 			[X] MobileSim
 
-- [ ] Linux Installation
+- [ ] Linux Installation: installing Linux on your device
 
-- [X] OpenCV Installation and Examples
+- [X] OpenCV Installation and Example: installing OpenCV for python and c++. Included Python Examples for basic OpenCV operation
 
-- [ ] Robotics Tools
+- [ ] Robotics Tools: packages that can be used throughout mobile robotics
 
 			[X] Communication
 
@@ -49,16 +49,16 @@ From that point forward you can begin to test and use the different software pac
 			[X] RPLIDAR
 
 
-- [X] ROS Introduction and Examples
+- [X] ROS Introduction and Examples: Understanding what ROS is composed of and example files to get started
 
-- [ ] ROS Installation
+- [ ] ROS Installation: Installing ROS on your linux device
 
-- [X] Secure-Shell(SSH)
+- [X] Secure-Shell(SSH): accessing computers remotely with SSH
 
 
 ## Project Contributers
 
-Waseem Hussain
+**Waseem Hussain**
 
 Mechatronics Engineering
 
@@ -69,7 +69,7 @@ w927hussain@gmail.com
 
 
 
-Andrew Aquino 
+**Andrew Aquino**
 
 Mechatronics Engineering
 
@@ -80,7 +80,7 @@ aquinoandrew50@gmail.com
 
 
 
-Dr. Flavio Cabrera 
+**Dr. Flavio Cabrera**
 
 Electrical Engineering
 
