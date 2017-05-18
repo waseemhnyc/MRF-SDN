@@ -1,6 +1,6 @@
 <launch>
   <!-- launch video stream -->
-    <arg name="camera_name" default="cosy" />
+    <arg name="camera_name" default="camera" />
 
   <!-- video_stream_provider can be a number as a video device or a url of a video stream -->
     <arg name="video_stream_provider" default="/home/waseemhussain/ROS_WORKSPACE_DEGREE_PROJECT/launch/map.mp4" />
