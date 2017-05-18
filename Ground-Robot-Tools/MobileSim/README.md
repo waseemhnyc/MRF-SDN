@@ -39,3 +39,5 @@ You can igonore them for now.
 
 
 You have just downloaded and can now use MobileSim.
+
+For more info contact: Dr Flavio Cabrera

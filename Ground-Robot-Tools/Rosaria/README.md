@@ -1,4 +1,4 @@
-## Installing and using Rosaria
+## Installing and Using Rosaria with MobileSim and the Pioneer 3DX Robot
 
 ### Installation of Rosaria and Rosaria Client
 
@@ -44,3 +44,15 @@ To connect to mobilesim you can run the terminal command:
 After successfully connecting in another terminal you can source the project once more and can run the command:
 
 		$ rosrun rosaria_client teleop
+
+If you would like to connect to a Pioneer 3DX with rosaria. Make sure you first configure your Pioneer 3DX and connect it to your Wifi network. Your development computer or onboard computer should also be on the same Wifi.
+Then you will run the following command but with the ip address of the connected Pioneer 3DX.
+
+		$ rosrun rosaria RosAria __port:={IP_ADDRESS}:8101
+		$ rosrun rosaria RosAria __port:=192.168.0.1:8101
+
+Now instead of publshing commands to the mobilesim robot, you are able to publish commands on a actual robot.
+
+
+For more info contact: Dr Flavio Cabrer
+

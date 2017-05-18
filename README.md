@@ -27,21 +27,23 @@ From that point forward you can begin to test and use the different software pac
 - Linux Installation
 
 - Robotics Tools
+		- [ ] Communication
 
-		- [ ] Computer Vision Related
+		- [ ] Computer Vision
 
 			- [ ] Image Stitching for Maps
 
-			- [ ] Color Detection
+			- [ ] Square and Circle Detection
 
 			- [ ] Face Detection
 
 			- [ ] Apriltag Detection
 
-
 		- [ ] RPLIDAR
 
-		- [ ] Xbox Kinect
+		- [ ] Python_Servo
+
+		- [ ] RPLIDAR
 
 - ROS
 

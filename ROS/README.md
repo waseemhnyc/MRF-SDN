@@ -3,10 +3,9 @@
 Robot Operating System (ROS) has become a standard in the robotics community. These drivers, algorithms, tools, libraries and conventions are aimed towards simplifying and creating complex robotic behavior across a wide range of platforms and applications. ROS is open source, where users have access to change and update projects.
 
 ### How ROS works
-T
-he basic ROS architecture is made up of packages with nodes (publishers, subscribers), topics, services, and messages. To send data, we must “publish” the data to a specific topic. When you would like to read or input data you must “subscribe” to a topic. Topics are used to exchange messages across different systems. A service is like a topic that a system exchanges messages but when a system uses a service to send a message that system waits for a reply before completing a new action.
+The basic ROS architecture is made up of packages with nodes (publishers, subscribers), topics, services, and messages. To send data, we must “publish” the data to a specific topic. When you would like to read or input data you must “subscribe” to a topic. Topics are used to exchange messages across different systems. A service is like a topic that a system exchanges messages but when a system uses a service to send a message that system waits for a reply before completing a new action.
 
-![alt text](http://wiki.ros.org/custom/images/wiki/ROS_basic_concepts.png "Logo Title Text 1")
+![alt text](http://wiki.ros.org/custom/images/wiki/ROS_basic_concepts.png "Publisher Subscriber and Service Example")
 
 #### Definitions
 Nodes: A node is an executable that uses ROS to communicate with other nodes.
@@ -178,9 +177,9 @@ To find out all topics and msgs that a node is publishing and subscribing to use
 		$ rosnode info node_name
 		$ rosnode info /rosAria
 
-### Running Example with Turtilesim
+### Running Example with Turtlesim
 
-To use examples open 4 terminal screens.
+To use examples open 4 terminal windows.
 
 In the first run the following command:
 
@@ -194,7 +193,7 @@ In the third run the following command:
 
 		$ rosrun turtlesim turtle_teleop_key 
 
-In the last terminal screen move into the directory of where you have your workspace with the scripts built.
+In the last terminal window move into the directory of where you have your workspace with the scripts built.
 When using this example create your catkin workspace, create a catkin package in this workspace with a directory as scripts. In this directory download and place the two examples, listener.py and talker.py.
 
 When using Python you must make an executable of your files. To do this go to the directory of where your files are located and ls. They should show up as a white or "normal" color. To make an exectubale use the following terminal command (for all the files):
