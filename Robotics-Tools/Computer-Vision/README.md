@@ -10,7 +10,7 @@ Example on how to stitch pictures together to create larger pictures. Useful in 
 
 ### Face Detection
 
-ROS Package that detects faces and publishes its x and y position on the frame
+This is a ROS Package we use the OpenCV library to help detect faces and then publish location of face as a ROS msg with a X and Y position on the camera frame.
 
 ### Apriltag Detections
 

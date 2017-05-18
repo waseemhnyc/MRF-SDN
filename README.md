@@ -50,3 +50,5 @@ From that point forward you can begin to test and use the different software pac
 
 - ROS Installation
 
+- Secure-Shell(SSH)
+

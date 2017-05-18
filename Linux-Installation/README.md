@@ -9,11 +9,11 @@ The Linux installation will depend on the hardware you are installing it on. The
 
 ### Linux Commands
 
-There are a few Linux Terminal commands that everyone should know. First open a terminal screen. When a terminal screen is first open it is in the home directory of the computer.
+There are a few Linux Terminal commands that everyone should know. First open a terminal window. When a terminal window first open it is in the home directory of the computer.
 
-To move from one folder or directory to the next you use the command:
+To move from one folder or directory to another you use the command:
 
-		$ cd
+		$ cd {directory_name}
 
 cd or change directory allows you to move to other directories.
 
