@@ -14,4 +14,4 @@ This is a C++ Example on how to use the OpenCV stitching class to stitch smaller
 
 ### Square and Circle Detection
 
-This is a Python Class that uses the OpenCV library to detect circle and squares based off its geometric features.
+This is a python class that uses the OpenCV library to detect circle and squares based off its geometric features.

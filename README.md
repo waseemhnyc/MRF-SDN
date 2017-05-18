@@ -40,7 +40,7 @@ From that point forward you can begin to test and use the different software pac
 
 					- [ ] Square and Circle Detection
 
-			- [ ] Joystick
+			- [X] Joystick
 
 			- [X] Python_Servo
 
