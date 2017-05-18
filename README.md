@@ -47,7 +47,7 @@ From that point forward you can begin to test and use the different software pac
 			- [X] RPLIDAR
 
 
-- [X] ROS
+- [X] ROS Introduction and Examples
 
 - [ ] ROS Installation
 
