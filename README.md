@@ -58,9 +58,31 @@ From that point forward you can begin to test and use the different software pac
 
 ## Project Contributers
 
-Waseem Hussain - Mechatronics Engineering - Vaughn College of Aeronautics and Technology - w927hussain@gmail.com
+Waseem Hussain
 
-Andrew Aquino - Mechatronics Engineering - Vaughn College of Aeronautics and Technology - aquinoandrew50@gmail.com
+Mechatronics Engineering
 
-Dr. Flavio Cabrera - Electrical Engineering - Professor at Vaughn College of Aeronautics and Technology - flavio.cabrera@vaughn.edu
+Student at Vaughn College of Aeronautics and Technology
+
+w927hussain@gmail.com
+
+
+
+Andrew Aquino 
+
+Mechatronics Engineering
+
+Student at Vaughn College of Aeronautics and Technology
+
+aquinoandrew50@gmail.com
+
+
+
+Dr. Flavio Cabrera 
+
+Electrical Engineering
+
+Professor at Vaughn College of Aeronautics and Technology
+
+flavio.cabrera@vaughn.edu
 
