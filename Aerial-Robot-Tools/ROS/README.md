@@ -2,11 +2,22 @@
 
 Users should be aware when testing code with props!
 
-Before attempting to program an Aerial Robot you first need to make or buy one and make sure its stable enough to maintain a steady hover. Refer to the folder Building-A-Aerialrobot to understand how to build one and what are the necessary hardware components.
+Before attempting to program an Aerial Robot you first need to make or buy one. You also need to tune your aerial robot so thats its stable enough to maintain a hover. Refer to the folder Building-A-Aerialrobot to understand how to build one and what are the necessary hardware components.
 
 ### Installing MAVROS
 
+MAVROS is a ROS package responsible for handling any mavlink communication that your flight controller is expecting or returning.
 
+Use the following command to download the mavros:
+		
+		$ sudo apt-get install ros-{ROS_DISTRIBUTION}-mavros ros-{ROS_DISTRIBUTION}-mavros-extras
+		$ sudo apt-get install ros-kinetic-mavros ros-kinetic-mavros-extras
+
+After the installation try to find the mavros launch file by running the command:
+
+		$ roslaunch mavros apm.launch
+
+If this is successful and you are able to find apm.launch then you know your installation was successful. If your computer is not able to find this launch file then you should restart your computer and try it again.
 
 ### Using MAVROS
 
@@ -38,3 +49,9 @@ You are able to run the examples found here and write your own code.
 
 
 For more information refer to:
+
+https://dev.px4.io/en/ros/mavros_installation.html
+
+http://wiki.ros.org/mavros
+
+

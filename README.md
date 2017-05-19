@@ -12,7 +12,7 @@ From that point forward you can begin to test and use the different software pac
 
 - [ ] Aerial Robot Tools 
 			
-			[ ] Building a Aerial Robot
+			[ ] Building an Aerial Robot
 
 			[X] DroneKit API
 
