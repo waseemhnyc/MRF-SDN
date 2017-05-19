@@ -8,7 +8,7 @@ Before attempting to program an Aerial Robot you first need to make or buy one. 
 
 MAVROS is a ROS package responsible for handling any mavlink communication that your flight controller is expecting or returning.
 
-Use the following command to download the mavros:
+Use the following command to download the mavros package:
 		
 		$ sudo apt-get install ros-{ROS_DISTRIBUTION}-mavros ros-{ROS_DISTRIBUTION}-mavros-extras
 		$ sudo apt-get install ros-kinetic-mavros ros-kinetic-mavros-extras
@@ -17,7 +17,7 @@ After the installation try to find the mavros launch file by running the command
 
 		$ roslaunch mavros apm.launch
 
-If this is successful and you are able to find apm.launch then you know your installation was successful. If your computer is not able to find this launch file then you should restart your computer and try it again.
+If this is successful and you are able to find apm.launch then you know your installation is complete. If your computer is not able to find this launch file then you should restart your computer and try it again.
 
 ### Using MAVROS
 
@@ -30,9 +30,9 @@ This terminal commmand will allow you to connect to your vehicle
 		$ roslaunch mavros {flight_firmware}.launch fcu_url:=/dev/ttyACM0:{Baudrate}
 		$ roslaunch mavros apm.launch fcu_url:=/dev/ttyACM0:921600
 
-After a few minutes your drone will finish connecting to your computer and ROS
+After a few minutes your drone will finish connecting to your computer and ROS.
 
-Then you will want to set some of the parameters in order to be able to recieve and send data to the flight controller.
+Next you need to set some of the parameters in order to be able to recieve and send data to the flight controller.
 
 		$ rosrun mavros mavsys rate --all 10
 
