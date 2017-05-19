@@ -2,6 +2,8 @@
 
 Users should be aware when testing code with props!
 
+Before attempting to program an Aerial Robot you first need to make or buy one and make sure its stable enough to maintain a steady hover. Refer to the folder Building-A-Aerialrobot to understand how to build one and what are the necessary hardware components.
+
 ### Installing MAVROS
 
 

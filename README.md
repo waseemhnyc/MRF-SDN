@@ -11,6 +11,8 @@ From that point forward you can begin to test and use the different software pac
 #### Guide and Directories
 
 - [ ] Aerial Robot Tools 
+			
+			[ ] Building a Aerial Robot
 
 			[X] DroneKit API
 
@@ -51,9 +53,11 @@ From that point forward you can begin to test and use the different software pac
 
 - [X] ROS Introduction and Examples: Understanding what ROS is composed of and example files to get started
 
-- [ ] ROS Installation: Installing ROS on your linux device
+- [X] ROS Installation: Installing ROS on your linux device
 
 - [X] Secure-Shell(SSH): accessing computers remotely with SSH
+
+
 
 
 ## Project Contributers
