@@ -1,0 +1,3 @@
+## Face Detection
+
+This ROS package publishes when a face is being detected in the frame of a webcam. The computer vision code was taken and modified from opencv example. Opencv creates a trained haar cascades from other pictures of faces (eyes and mouth features). After seeing if there is similarties from the haar cascades to the current webcam frame, we draw a circle around the center of the found object. This is converted into a ROS message by publishing this data of where the detected object is with respect to the camera frame.

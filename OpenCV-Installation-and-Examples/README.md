@@ -38,3 +38,10 @@ Next the folder must be built, it is recommended to use several threads because 
 Lastly, the libraries must be installed with the following command.
 
 		$ sudo make install
+
+
+For more info on opencv, refer to the following links:
+
+http://docs.opencv.org/3.0-beta/doc/tutorials/tutorials.html
+
+https://opencv-python-tutroals.readthedocs.io/en/latest/

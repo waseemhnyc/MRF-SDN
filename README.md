@@ -30,7 +30,7 @@ From that point forward you can begin to test and use the different software pac
 
 - [X] OpenCV Installation and Example: installing OpenCV for python and c++. Included Python Examples for basic OpenCV use
 
-- [ ] Robotics Tools: packages that can be used throughout mobile robotics
+- [X] Robotics Tools: packages that can be used throughout mobile robotics
 
 			[X] Communication
 
@@ -38,11 +38,11 @@ From that point forward you can begin to test and use the different software pac
 
 					[X] Apriltag Detection
 
-					[ ] Face Detection
+					[X] Face Detection
 
-					[ ] Image Stitching for Maps
+					[X] Image Stitching for Maps
 
-					[ ] Square and Circle Detection
+					[X] Square and Circle Detection
 
 			[X] Joystick
 
