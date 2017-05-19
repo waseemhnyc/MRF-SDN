@@ -10,15 +10,15 @@ From that point forward you can begin to test and use the different software pac
 
 #### Guide and Directories
 
-- [ ] Aerial Robot Tools 
+- [X] Aerial Robot Tools 
 			
-			[ ] Building an Aerial Robot
+			[X] Building an Aerial Robot
 
 			[X] DroneKit API
 
-			[ ] ROS
+			[X] ROS
 
-- [ ] Ground Robot Tools
+- [X] Ground Robot Tools
 
 			[X] Rosaria
 
@@ -26,9 +26,9 @@ From that point forward you can begin to test and use the different software pac
 
 			[X] MobileSim
 
-- [ ] Linux Installation: installing Linux on your device
+- [X] Linux Installation: installing Linux on your device
 
-- [X] OpenCV Installation and Example: installing OpenCV for python and c++. Included Python Examples for basic OpenCV operation
+- [X] OpenCV Installation and Example: installing OpenCV for python and c++. Included Python Examples for basic OpenCV use
 
 - [ ] Robotics Tools: packages that can be used throughout mobile robotics
 
