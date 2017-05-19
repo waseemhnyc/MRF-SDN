@@ -92,3 +92,9 @@ Professor at Vaughn College of Aeronautics and Technology
 
 flavio.cabrera@vaughn.edu
 
+
+
+## Intersted in Contributing?
+
+If you would like to contribute to this project, add any tools/packages or modify what we have, feel free to fork this project or email a contributer so we may include you as a contributer.
+
