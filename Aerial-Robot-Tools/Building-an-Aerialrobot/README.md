@@ -1,4 +1,4 @@
-## Building a Aerial Robot
+## Building an Aerial Robot
 
 Aerial Robots, Unmanned Aerial Vehicles (UAVs) or Drones are robots with flying abilities. Flying has its advantage in applications, rather than moving on the ground. In order to build a simple quadcopter, you will need following:
 
