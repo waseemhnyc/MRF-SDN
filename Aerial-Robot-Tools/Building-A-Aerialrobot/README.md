@@ -2,15 +2,15 @@
 
 Aerial Robots, Unmanned Aerial Vehicles (UAVs) or Drones are robots with flying abilities. Flying has its advantage in applications, rather than moving on the ground. In order to build a simple quadcopter, you will need following:
 
-		1.	Flight controller
-		2.	Quadcopter frame
-		3.	Brushless motors
-		4.	ESC (electronic speed controllers)
-		5.	Propellers
-		6.	Transmitter and receiver
-		7.	Optical flow and Lidar or GPS.
-		8. 	PDB - Power Distribution Board
-		9.  Battery
+		1. Flight controller
+		2. Quadcopter frame
+		3. Brushless motors
+		4. ESC (electronic speed controllers)
+		5. Propellers
+		6. Transmitter and receiver
+		7. Optical flow and Lidar or GPS.
+		8. PDB - Power Distribution Board
+		9. Battery
 
 Most Unmanned Aerial Vehicles (UAVs) aren’t fully autonomous; most of them are remotely operated by a human controller from the ground. To become fully autonomous, UAVs need to use better and more accurate sensors for sensing obstacles and obstacle avoidance.  Many UAVs are small and lightweight, so they can’t carry heavy and powerful sensors. For this reason, both a LIDAR and Optical Flow Sensor are added to our UAV. They are both small, lightweight, and are precise in their measurements. When both sensors are attached to the UAV, autonomous capabilities are achievable. The UAV not only holds its altitude because of the LIDAR sensor, but it can also hold its current position in midair. This means that if the UAV is either pushed or moved by a wind, it will return to its previous position because of the onboard sensors. Before this was only achievable outdoors because of GPS, but now with these sensors UAVs can accomplish the same task indoors. 
 
@@ -23,6 +23,14 @@ http://ardupilot.org/
 
 https://pixhawk.org/
 
+
+### MAVLINK
+
+Both of these flight controllers can communicate with computers thourgh a protocal known as mavlink. 
+Mavink consists of 17 bytes and includes the message ID, target ID and data. The message ID shows what the data is. Message IDs can be seen in the messageID command set.
+This enables MAVLink to be able to get information from multiple UAVs if messages are transferred in the same channel. Messages can either be transmitted through wireless signals.
+
+More info on Mavlink can be found at [404warehouse](https://404warehouse.net/2015/12/20/autopilot-offboard-control-using-mavros-package-on-ros/) and [qgroundcontrol](http://qgroundcontrol.org/mavlink/start)
 
 #### Brushless Motors
 
