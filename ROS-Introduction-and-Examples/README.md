@@ -35,6 +35,7 @@ Create a ROS workspace name catkin_ws with a folder name src with the following 
 		$ mkdir -p ~/catkin_ws/src
 
 Move into your source folder:
+
 		$ cd ~/catkin_ws/src
 
 Create symlink in your source directory:
@@ -43,7 +44,11 @@ Create symlink in your source directory:
 
 You will now see a CMakeLists.txt file
 
-You are now able to "build" the project using:
+You are now able to "build" the project by first moving back into the directory where you see the directories: src, devel, build. You are able to move back with the following command:
+
+		$ cd ..
+
+Once in the directory you can build your project with:
 
 		$ catkin_make 
 
