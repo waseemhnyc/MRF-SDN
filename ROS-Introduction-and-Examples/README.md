@@ -32,11 +32,11 @@ Manifests (package.xml): A manifest is a description of a package. It serves to 
 
 Create a ROS workspace name catkin_ws with a folder name src with the following command:
 
-		$ mkdir -p ~/catkin_ws/src
+		$ mkdir -p ros_workspace/src
 
 Move into your source folder:
 
-		$ cd ~/catkin_ws/src
+		$ cd ros_workspace/src
 
 Create symlink in your source directory:
 
@@ -64,6 +64,8 @@ Need to be in project workspace
 
 #### Creating a ROS Package for Python
 
+The work you will be doing, will happen in the src
+
 Note: There can be no more then one package in each folder (no nested pacakges nor multiple packages sharing the same directory)
 
 example strcutre of a package:
@@ -87,9 +89,12 @@ Every package created will contain a package.xml and a CMakeLists.txt
 The above line follows the following format:
 
 		catkin_create_pkg <package_name> [depend1] [depend2] [depend3]
-
+		
+		DO THIS!
+		$ catkin_create_pkg name-here rospy 
+		
 Move into your <package_name> and create a folder for where you will put your scripts:
-
+		$ cd package_name
 		$ mkdir scripts
 
 After creating a package and writing scripts, build it in the catkin workspace:
