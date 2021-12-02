@@ -3,11 +3,18 @@ import rospy
 import time
 import math 
 
-from geometry_msgs.msg import Twist, Vector3
-from turtlesim.msg import Pose
+from geometry_msgs.msg import Twist, Vector3 # ROS RELATED
+from turtlesim.msg import Pose # ROS and Turtlesim related
 
+# leave this at that
 def callback(data):
+    # angle
     theta = data.theta
+    
+    # x position of the robot
+    x_position = data.x
+    
+    # y position of the robot
     y_position = data.y
 
     while (y_position <= 9.2):
@@ -20,14 +27,26 @@ def callback(data):
             break
 
 def listener():
+    # rospy.Subscriber(topic name, the topic data type, function to call once you get the data)
     rospy.Subscriber('/turtle1/pose', Pose, callback)
+    
 
 if __name__ == '__main__':
     try:
-        rospy.init_node('node1_draw_S')
+        
+        # init node
+        rospy.init_node('draw_S')
+        
+        # create publisher
+        
+        # rospy.Publisher(topic, topic data type, how much data to send per time)
         pub = rospy.Publisher('/turtle1/cmd_vel', Twist, queue_size=1)
+        
+        # While rospy is not shut down do this
         while not rospy.is_shutdown():
             listener()
+            
+            # update ros and keep going
             rospy.spin()
 
     except rospy.ROSInterruptException:
