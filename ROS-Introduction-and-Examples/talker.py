@@ -6,14 +6,13 @@ import math
 from geometry_msgs.msg import Twist, Vector3 # ROS RELATED
 from turtlesim.msg import Pose # ROS and Turtlesim related
 
-# leave this at that
+# leave data here
+# UPDATE THIS FUNCTION WITH YOUR LOGIC TO COMPLETE TASK
 def callback(data):
     # angle
     theta = data.theta
-    
     # x position of the robot
     x_position = data.x
-    
     # y position of the robot
     y_position = data.y
 
@@ -38,7 +37,6 @@ if __name__ == '__main__':
         rospy.init_node('draw_S')
         
         # create publisher
-        
         # rospy.Publisher(topic, topic data type, how much data to send per time)
         pub = rospy.Publisher('/turtle1/cmd_vel', Twist, queue_size=1)
         
