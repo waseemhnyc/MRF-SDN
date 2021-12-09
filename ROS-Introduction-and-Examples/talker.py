@@ -10,6 +10,8 @@ from turtlesim.msg import Pose # ROS and Turtlesim related
 # UPDATE THIS FUNCTION WITH YOUR LOGIC TO COMPLETE TASK
 def callback(data):
     # angle
+    # counter clockwise - positive Vector3(0,0,.75)
+    # clockwise - negative Vector3(0,0,-.75)
     theta = data.theta
     # x position of the robot
     x_position = data.x
@@ -28,7 +30,7 @@ def callback(data):
 def listener():
     # rospy.Subscriber(topic name, the topic data type, function to call once you get the data)
     rospy.Subscriber('/turtle1/pose', Pose, callback)
-    
+
 
 if __name__ == '__main__':
     try:
@@ -47,5 +49,5 @@ if __name__ == '__main__':
             # update ros and keep going
             rospy.spin()
 
-    except rospy.ROSInterruptException:
-        pass
+    except rospy.ROSInterruptException as e:
+        print(e)
