@@ -66,8 +66,6 @@ From that point forward you can begin to test and use the different software pac
 
 Mechatronics Engineering
 
-Student at Vaughn College of Aeronautics and Technology
-
 w927hussain@gmail.com
 
 
@@ -76,8 +74,6 @@ w927hussain@gmail.com
 **Andrew Aquino**
 
 Mechatronics Engineering
-
-Student at Vaughn College of Aeronautics and Technology
 
 aquinoandrew50@gmail.com
 
@@ -88,7 +84,6 @@ aquinoandrew50@gmail.com
 
 Electrical Engineering
 
-Professor at Vaughn College of Aeronautics and Technology
 
 flavio.cabrera@vaughn.edu
 
