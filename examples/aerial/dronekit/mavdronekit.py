@@ -15,7 +15,7 @@ import threading
 # sitl = dronekit_sitl.start_default()
 
 # connection_string = '/dev/tty.usbmodem1' # Mac
-connection_string = '/dev/ttyACM0' # Linux - Odroid
+connection_string = '/dev/ttyACM0'  # Linux - Odroid
 # connection_string = sitl.connection_string() #SITL
 
 # Used to know the center of camera frame
@@ -30,42 +30,42 @@ vcatDrone = yourDrone(connection_string)
 # detect = targetDetection()
 
 try:
-	time.sleep(3)
-	vcatDrone.armMotors()
-	print('User has 10 seconds to manually hover aircraft')
-	time.sleep(10)
+    time.sleep(3)
+    vcatDrone.armMotors()
+    print('User has 10 seconds to manually hover aircraft')
+    time.sleep(10)
 
-	print('Drone is running autonomous actions')
+    print('Drone is running autonomous actions')
 
-	while(vcatDrone.getMode() != 'POSHOLD'):
-		vcatDrone.changeModeRC('POSHOLD')
+    while(vcatDrone.getMode() != 'POSHOLD'):
+        vcatDrone.changeModeRC('POSHOLD')
 
-	for x in range(15):
-		vcatDrone.pitchForward()
-	for x in range(4):
-		vcatDrone.stayInPlace()
-	for x in range(10):
-		vcatDrone.pitchBackward()
+    for x in range(15):
+        vcatDrone.pitchForward()
+    for x in range(4):
+        vcatDrone.stayInPlace()
+    for x in range(10):
+        vcatDrone.pitchBackward()
 
-	vcatDrone.changeAltitude(5)
-	
-	vcatDrone.correctYaw()
+    vcatDrone.changeAltitude(5)
 
-	vcatDrone.scanArea(10,4,10)
+    vcatDrone.correctYaw()
 
-	vcatDrone.land()
-	vcatDrone.disarmMotors()
-	vcatDrone.relseaseRcChannels()
+    vcatDrone.scanArea(10, 4, 10)
 
-	vcatDrone.turnOffDrone()
-	# sitl.stop()
-	# cap.release()
-	# cv2.destroyAllWindows()
-except:
-	print 'FAILSAFE!'
-	vcatDrone.stayInPlace()
-	vcatDrone.land() 
-	# Give user back in control of the vehicle so that they may land themselves
-	# vcatDrone.relseaseRcChannels()
-	# sitl.stop()
-	vcatDrone.turnOffDrone()
+    vcatDrone.land()
+    vcatDrone.disarmMotors()
+    vcatDrone.relseaseRcChannels()
+
+    vcatDrone.turnOffDrone()
+    # sitl.stop()
+    # cap.release()
+    # cv2.destroyAllWindows()
+except BaseException:
+    print('FAILSAFE!')
+    vcatDrone.stayInPlace()
+    vcatDrone.land()
+    # Give user back in control of the vehicle so that they may land themselves
+    # vcatDrone.relseaseRcChannels()
+    # sitl.stop()
+    vcatDrone.turnOffDrone()

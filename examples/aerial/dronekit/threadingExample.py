@@ -6,14 +6,15 @@ import time
 
 class StayInPlaceThread(threading.Thread):
 
-	def __init__(self, name):
-		threading.Thread.__init__(self)
-		self.name = name
+    def __init__(self, name):
+        threading.Thread.__init__(self)
+        self.name = name
 
-	def run(self):
-		print "Starting " + self.name
-		vcatDrone.stayInPlace()
-		print "Exiting " + self.name
+    def run(self):
+        print("Starting " + self.name)
+        # TODO: Define vcatDrone
+        # vcatDrone.stayInPlace()
+        print("Exiting " + self.name)
 
 # Example for opencv to continuously run and update the values
 # This is important to have in situations when processesor on the computer may not be as fast and creates a lag when
@@ -24,17 +25,17 @@ class StayInPlaceThread(threading.Thread):
 # 		threading.Thread.__init__(self)
 # 		self.namse = name
 #		self.img = img
-	
+
 
 # 	def run(self):
-# 		print "Starting " + self.name
+# 		print("Starting " + self.name)
 # 		sx,sy = targetDetection.find_squares(self.img)
 # 		cx, cy = targetDetection.find_circles(self.img)
-# 		print sx
-# 		print sy
-# 		print cx
-# 		print cy
-# 		print "Exiting " + self.name
+# 		print(sx)
+# 		print(sy)
+# 		print(cx)
+# 		print(cy)
+# 		print("Exiting " + self.name)
 
 _stayInPlaceThread = StayInPlaceThread("Stay In Place Thread")
 # _OpenCvThread = OpenCvThread("Getting Targets")
@@ -50,4 +51,5 @@ time.sleep(5)
 # 5 seconds later the OpenCvThread will end
 # _OpenCvThread.stop()
 
-# During the time the were both on, they were both running on the microprocessor and updating themselves.
+# During the time the were both on, they were both running on the
+# microprocessor and updating themselves.
