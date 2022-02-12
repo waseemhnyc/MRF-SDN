@@ -3,11 +3,13 @@
 import rospy
 from turtlesim.msg import Pose
 
+
 def callback(data):
     # rospy.loginfo(rospy.get_caller_id() + 'I heard %s', data.data)
     rospy.loginfo('Pose x: %s', data.x)
     rospy.loginfo('Pose y: %s', data.y)
     rospy.loginfo('Pose theta: %s', data.theta)
+
 
 def listener():
 
@@ -21,6 +23,7 @@ def listener():
     rospy.Subscriber('/turtle1/pose', Pose, callback)
     # spin() simply keeps python from exiting until this node is stopped
     rospy.spin()
+
 
 if __name__ == '__main__':
     listener()
