@@ -11,10 +11,11 @@ import cv2
 
 defaultSize = 512
 
+
 class TestSceneRender():
 
-    def __init__(self, bgImg = None, fgImg = None,
-        deformation = False, speed = 0.25, **params):
+    def __init__(self, bgImg=None, fgImg=None,
+                 deformation=False, speed=0.25, **params):
         self.time = 0.0
         self.timeStep = 1.0 / 30.0
         self.foreground = fgImg
@@ -31,21 +32,38 @@ class TestSceneRender():
 
         if fgImg is not None:
             self.foreground = fgImg.copy()
-            self.center = self.currentCenter = (int(self.w/2 - fgImg.shape[0]/2), int(self.h/2 - fgImg.shape[1]/2))
+            self.center = self.currentCenter = (
+                int(self.w / 2 - fgImg.shape[0] / 2), int(self.h / 2 - fgImg.shape[1] / 2))
 
-            self.xAmpl = self.sceneBg.shape[0] - (self.center[0] + fgImg.shape[0])
-            self.yAmpl = self.sceneBg.shape[1] - (self.center[1] + fgImg.shape[1])
+            self.xAmpl = self.sceneBg.shape[0] - \
+                (self.center[0] + fgImg.shape[0])
+            self.yAmpl = self.sceneBg.shape[1] - \
+                (self.center[1] + fgImg.shape[1])
 
-        self.initialRect = np.array([ (self.h/2, self.w/2), (self.h/2, self.w/2 + self.w/10),
-         (self.h/2 + self.h/10, self.w/2 + self.w/10), (self.h/2 + self.h/10, self.w/2)]).astype(int)
+        self.initialRect = np.array([(self.h /
+                                      2, self.w /
+                                      2), (self.h /
+                                           2, self.w /
+                                           2 +
+                                           self.w /
+                                           10), (self.h /
+                                                 2 +
+                                                 self.h /
+                                                 10, self.w /
+                                                 2 +
+                                                 self.w /
+                                                 10), (self.h /
+                                                       2 +
+                                                       self.h /
+                                                       10, self.w /
+                                                       2)]).astype(int)
         self.currentRect = self.initialRect
 
     def getXOffset(self, time):
-        return int( self.xAmpl*cos(time*self.speed))
-
+        return int(self.xAmpl * cos(time * self.speed))
 
     def getYOffset(self, time):
-        return int(self.yAmpl*sin(time*self.speed))
+        return int(self.yAmpl * sin(time * self.speed))
 
     def setInitialRect(self, rect):
         self.initialRect = rect
@@ -53,13 +71,16 @@ class TestSceneRender():
     def getRectInTime(self, time):
 
         if self.foreground is not None:
-            tmp = np.array(self.center) + np.array((self.getXOffset(time), self.getYOffset(time)))
+            tmp = np.array(self.center) + \
+                np.array((self.getXOffset(time), self.getYOffset(time)))
             x0, y0 = tmp
             x1, y1 = tmp + self.foreground.shape[0:2]
             return np.array([y0, x0, y1, x1])
         else:
-            x0, y0 = self.initialRect[0] + np.array((self.getXOffset(time), self.getYOffset(time)))
-            x1, y1 = self.initialRect[2] + np.array((self.getXOffset(time), self.getYOffset(time)))
+            x0, y0 = self.initialRect[0] + \
+                np.array((self.getXOffset(time), self.getYOffset(time)))
+            x1, y1 = self.initialRect[2] + \
+                np.array((self.getXOffset(time), self.getYOffset(time)))
             return np.array([y0, x0, y1, x1])
 
     def getCurrentRect(self):
@@ -80,13 +101,21 @@ class TestSceneRender():
         img = self.sceneBg.copy()
 
         if self.foreground is not None:
-            self.currentCenter = (self.center[0] + self.getXOffset(self.time), self.center[1] + self.getYOffset(self.time))
-            img[self.currentCenter[0]:self.currentCenter[0]+self.foreground.shape[0],
-             self.currentCenter[1]:self.currentCenter[1]+self.foreground.shape[1]] = self.foreground
+            self.currentCenter = (
+                self.center[0] +
+                self.getXOffset(
+                    self.time),
+                self.center[1] +
+                self.getYOffset(
+                    self.time))
+            img[self.currentCenter[0]:self.currentCenter[0] +
+                self.foreground.shape[0], self.currentCenter[1]:self.currentCenter[1] +
+                self.foreground.shape[1]] = self.foreground
         else:
-            self.currentRect = self.initialRect + np.int( 30*cos(self.time*self.speed) + 50*sin(self.time*self.speed))
+            self.currentRect = self.initialRect + \
+                np.int(30 * cos(self.time * self.speed) + 50 * sin(self.time * self.speed))
             if self.deformation:
-                self.currentRect[1:3] += self.h/20*cos(self.time)
+                self.currentRect[1:3] += self.h / 20 * cos(self.time)
             cv2.fillConvexPoly(img, self.currentRect, (0, 0, 255))
 
         self.time += self.timeStep
@@ -109,7 +138,7 @@ if __name__ == '__main__':
         cv2.imshow('img', img)
 
         ch = cv2.waitKey(3)
-        if  ch == 27:
+        if ch == 27:
             break
     #import os
     #print (os.environ['PYTHONPATH'])
