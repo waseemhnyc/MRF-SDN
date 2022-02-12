@@ -12,6 +12,6 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
       - name: Install Dependencies
-        run: apt-get install -y flake8
+        run: sudo apt-get install -y flake8
       - name: lint
         run: flake8 . --count --show-source --statistics
