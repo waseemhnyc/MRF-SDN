@@ -9,7 +9,7 @@ cd ../examples/ros/basic_pub_sub
 
 echo "Starting talker and listener..."
 docker-compose up -d
-sleep 1
+sleep 3
 
 echo -n "Talker is publishing..."
 if [[ $(docker-compose logs talker | grep "Publishing: 'Hello World:") ]]; then
