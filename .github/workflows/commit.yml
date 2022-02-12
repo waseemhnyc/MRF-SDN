@@ -1,0 +1,17 @@
+---
+name: commit
+
+on:
+  push:
+
+jobs:
+  pylint:
+    name: Python lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: apt-get install -y flake8
+      - name: lint
+        run: flake8 . --count --show-source --statistics
