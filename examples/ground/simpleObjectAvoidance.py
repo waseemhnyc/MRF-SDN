@@ -1,10 +1,11 @@
 #!/usr/bin/env python
-import rospy 
+import rospy
 import time
 import math
 
 from sensor_msgs.msg import PointCloud
 from geometry_msgs.msg import Twist, Vector3
+
 
 def callback(data):
 
@@ -16,27 +17,27 @@ def callback(data):
 
     sonar4_x = data.points[4].x
     sonar4_y = data.points[4].y
-    
+
     sonar5_x = data.points[5].x
     sonar5_y = data.points[5].y
 
-    print ('Sonar 2')
-    print 'x: %s' %sonar2_x
-    print 'y: %s' %sonar2_y
-    print
-    print ('Sonar 3')
-    print 'x: %s' %sonar3_x
-    print 'y: %s' %sonar3_y
-    print
-    print ('Sonar 4')
-    print 'x: %s' %sonar4_x
-    print 'y: %s' %sonar4_y
-    print
-    print ('Sonar 5')
-    print 'x: %s' %sonar5_x
-    print 'y: %s' %sonar5_y
-    print
-    print
+    print('Sonar 2')
+    print('x: %s' % sonar2_x)
+    print('y: %s' % sonar2_y)
+    print('\n')
+    print('Sonar 3')
+    print('x: %s' % sonar3_x)
+    print('y: %s' % sonar3_y)
+    print('\n')
+    print('Sonar 4')
+    print('x: %s' % sonar4_x)
+    print('y: %s' % sonar4_y)
+    print('\n')
+    print('Sonar 5')
+    print('x: %s' % sonar5_x)
+    print('y: %s' % sonar5_y)
+    print('\n')
+    print('\n')
 
     if sonar3_x <= 1.3:
         msg.linear.x = 0
@@ -56,6 +57,7 @@ def callback(data):
 
     pub.publish(msg)
     r.sleep()
+
 
 if __name__ == '__main__':
     try:
