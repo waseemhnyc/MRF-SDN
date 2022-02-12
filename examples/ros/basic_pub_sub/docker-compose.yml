@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  listener:
+    build: ./
+    command: ros2 run demo_nodes_cpp listener
+
+  talker:
+    build: ./
+    command: ros2 run demo_nodes_cpp talker
