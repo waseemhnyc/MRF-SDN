@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 import rospy
-import time
 import math
 
 from geometry_msgs.msg import Twist, Vector3  # ROS RELATED
@@ -16,7 +15,8 @@ def callback(data):
     # clockwise - negative Vector3(0,0,-.75)
     theta = data.theta
     # x position of the robot
-    x_position = data.x
+    # TODO: uncomment if needed
+    # x_position = data.x
     # y position of the robot
     y_position = data.y
 
