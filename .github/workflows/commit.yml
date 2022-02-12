@@ -14,4 +14,4 @@ jobs:
       - name: Install Dependencies
         run: sudo apt-get install -y flake8
       - name: lint
-        run: flake8 . --count --show-source --statistics
+        run: flake8 . --count --show-source --statistics --ignore=F841,E501,F401,W504,E265,F405,F403
