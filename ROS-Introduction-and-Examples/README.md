@@ -44,7 +44,7 @@ Create symlink in your source directory:
 
 You will now see a CMakeLists.txt file
 
-You are now able to "build" the project by first moving back into the directory where you see the directories: src, devel, build. You are able to move back with the following command:
+You are now able to "build" the project by first moving back into the directory where you see the directories: src. You are able to move back with the following command:
 
 		$ cd ..
 
