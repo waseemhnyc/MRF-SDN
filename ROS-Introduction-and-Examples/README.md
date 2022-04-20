@@ -222,3 +222,5 @@ Source this terminal with the command:
 
 Now you are able to run the examples. First, run the listener.py and observe position of the turtle. Next, run the publisher.py and see how the turtle on turtlesim node moves. End that node and then rerun the listener.py and look at the turtles new position.
 
+`rostopic echo /turtle1/pose`
+`rosrun turtlesim turtle_teleop_key`
