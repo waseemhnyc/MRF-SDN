@@ -24,6 +24,7 @@ def callback(data):
             break
 
         elif ( theta < math.pi and y_position < 9.2 ):
+#                             Linear  x y z  Angular x y  z
             pub.publish(Twist(Vector3(1,0,0),Vector3(0,0,-.75)))
             break
 
