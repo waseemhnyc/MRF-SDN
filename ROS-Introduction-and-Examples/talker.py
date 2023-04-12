@@ -34,7 +34,7 @@ def listener():
 
 if __name__ == '__main__':
     try:
-        
+        # THIS IS WHERE THE CODE STARTS!!
         # init node
         rospy.init_node('draw_S')
         
