@@ -11,45 +11,29 @@ From that point forward you can begin to test and use the different software pac
 #### Guide and Directories
 
 - [X] Aerial Robot Tools 
-			
-			[X] Building an Aerial Robot
-
-			[X] DroneKit API
-
-			[X] ROS
+	- [X] Building an Aerial Robot
+	- [X] DroneKit API
+	- [X] ROS
 
 - [X] Ground Robot Tools
-
-			[X] Rosaria
-
-			[X] Raspberry Pi / GoPiGo Board
-
-			[X] MobileSim
+	- [X] Rosaria
+	- [X] Raspberry Pi / GoPiGo Board
+	- [X] MobileSim
 
 - [X] Linux Installation: installing Linux on your device
 
 - [X] OpenCV Installation and Example: installing OpenCV for python and c++. Included Python Examples for basic OpenCV use
 
 - [X] Robotics Tools: packages that can be used throughout mobile robotics
-
-			[X] Communication
-
-			[X] Computer Vision
-
-					[X] Apriltag Detection
-
-					[X] Face Detection
-
-					[X] Image Stitching for Maps
-
-					[X] Square and Circle Detection
-
-			[X] Joystick
-
-			[X] Python Servo
-
-			[X] RPLIDAR
-
+	- [X] Communication
+	- [X] Computer Vision
+		- [X] Apriltag Detection
+		- [X] Face Detection
+		- [X] Image Stitching for Maps
+		- [X] Square and Circle Detection
+	- [X] Joystick
+	- [X] Python Servo
+	- [X] RPLIDAR
 
 - [X] ROS Introduction and Examples: Understanding what ROS is composed of and example files to get started
 

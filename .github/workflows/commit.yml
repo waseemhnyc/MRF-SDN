@@ -1,0 +1,37 @@
+---
+name: commit
+
+on:
+  push:
+
+jobs:
+  pylint-temp:
+    name: Python lint (temporary)
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: sudo apt-get install -y flake8
+      - name: lint
+        run: flake8 . --count --show-source --statistics --ignore=F841,E501,F401,W504,E265,F405,F403
+
+  pylint:
+    name: Python lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: sudo apt-get install -y flake8
+      - name: lint
+        run: flake8 . --count --show-source --statistics
+
+  rostest:
+    name: ROS docker compose
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: Run tests
+        run: cd tests && ./ros.sh
