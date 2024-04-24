@@ -32,11 +32,11 @@ Manifests (package.xml): A manifest is a description of a package. It serves to 
 
 Create a ROS workspace name catkin_ws with a folder name src with the following command:
 
-		$ mkdir -p ros_workspace/src
+		$ mkdir -p ros_workspace/src/
 
 Move into your source folder:
 
-		$ cd ros_workspace/src
+		$ cd ros_workspace/src/
 
 Create symlink in your source directory:
 
